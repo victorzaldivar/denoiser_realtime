@@ -11,7 +11,18 @@ Primero, instalar Python 3.7 (recomendado con Anaconda).
 #### A través de  pip (es solamente para descargar el modelo pre-entrenado listo para usar)
 Solamente hay que hacer ejecutar des de la terminal
 ```bash
-pip install denoiser_realtime
+git clone https://github.com/victorzaldivar/denoiser_realtime.git
+cd denoiser_realtime
+pip install -r requirements.txt  # If you don't have cuda
+pip install -r requirements_cuda.txt  # If you have cuda
+```
+
+
+```bash
+git clone https://github.com/victorzaldivar/denoiser_realtime.git
+cd denoiser_realtime
+pip install -r requirements.txt  # If you don't have cuda
+pip install -r requirements_cuda.txt  # If you have cuda
 ```
 
 ## Para poder utilizar el modelo en tiempo real
