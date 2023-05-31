@@ -1,4 +1,4 @@
-Elimininación de ruido en tiempo real con el modelo [SudoRmRf][https://github.com/etzinis/sudo_rm_rf#pre-trained-models-and-easy-to-use-recipes].
+Elimininación de ruido en tiempo real con el modelo [SudoRmRf](https://github.com/etzinis/sudo_rm_rf#pre-trained-models-and-easy-to-use-recipes).
 
 Éste repositorio proporciona una implementación de PyTorch para realizar denoising en tiempo real. 
 
@@ -9,7 +9,7 @@ Primero, instalar Python 3.7 (recomendado con Anaconda).
 
 
 ## Instalar Pytorch 
-A través de la pàgina web oficial de [Pytorch][https://pytorch.org/], descargar la librería siguiendo los pasos que os indican a través del sistema operativo que vuestro Pc o portàtil disponga en lenguaje Python. 
+A través de la pàgina web oficial de [Pytorch](https://pytorch.org/), descargar la librería siguiendo los pasos que os indican a través del sistema operativo que vuestro Pc o portàtil disponga en lenguaje Python. 
 
 
 ## Instalar el repositorio
