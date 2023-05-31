@@ -1,6 +1,6 @@
-Elimininación de ruido en tiempo real con el modelo [SudoRmRf](https://github.com/etzinis/sudo_rm_rf#pre-trained-models-and-easy-to-use-recipes).
+# Eliminación de ruido en tiempo real
 
-Éste repositorio proporciona una implementación de PyTorch para realizar denoising en tiempo real. 
+Éste repositorio proporciona una implementación de PyTorch para realizar denoising en tiempo real a partir del modelo [SudoRmRf](https://github.com/etzinis/sudo_rm_rf#pre-trained-models-and-easy-to-use-recipes).
 
 El algoritmo propuesto está basado en la arquitectura Sudo RM-Rf para la separación de fuentes, pero está aplicado para que pueda ejecutarse en tiempo real a través de la GPU de los porátiles Apple Silicon con procesador M1.
 
