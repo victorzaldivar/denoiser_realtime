@@ -4,19 +4,19 @@
 
 El algoritmo propuesto está basado en la arquitectura Sudo RM-Rf para la separación de fuentes, pero está aplicado para que pueda ejecutarse en tiempo real a través de la GPU de los porátiles Apple Silicon con procesador M1.
 
-### Proceso de instalación 
+## Proceso de instalación 
 Primero, instalar Python 3.7 (recomendado con Anaconda).
 
 
-## Instalar Pytorch 
+### Instalar Pytorch 
 A través de la pàgina web oficial de [Pytorch](https://pytorch.org/), descargar la librería siguiendo los pasos que os indican a través del sistema operativo que vuestro Pc o portàtil disponga en lenguaje Python. 
 
 
-## Instalar el repositorio
+### Instalar el repositorio
 Hay que clonar este repositorio e instalar todas las dependencias. Recomendamos usar un entorno virtual.
 
 
-## Creación del entorno virtual. 
+### Creación del entorno virtual. 
 Para crear un nuevo entorno virtual Conda para poder clonar el repositorio hay que seguir estos pasos.
 ```bash
 conda create --name=test # En 'test' puedes poner el nombre que quieras del entorno virtual
@@ -35,7 +35,7 @@ pip install -r requirements_cuda.txt  #si tienes cuda
 pip install -r reqs.txt
 ```
 
-## Instalación de paquetes y dependencias
+### Instalación de paquetes y dependencias
 Para poder ejecutar el modelo, primero hay que instalar un seguido de paquetes y dependencias.
 ```bash
 conda install pip
@@ -53,11 +53,11 @@ pip install pesq
 pip install hydra-core --upgrade
 ```
 
-## Para poder utilizar el modelo en tiempo real
+### Para poder utilizar el modelo en tiempo real
 
 Para ejecutar el modelo `denoiser_realtime` en tiempo real (por ejemplo para una videoconferencia), necesitaremos una interfaz de audio loopback específica.
 
-## BlackHole para Mac OS X
+### BlackHole para Mac OS X
 
 Para Mac OS X, hay que utilizar la interfaz [BlackHole](https://existential.audio/blackhole/).
 Hay que intalarse BlackHole, y después en el terminal hay que ejecutar:
