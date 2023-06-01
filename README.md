@@ -2,14 +2,14 @@
 
 Éste repositorio proporciona una implementación de PyTorch para realizar denoising en tiempo real a partir del modelo [SudoRmRf](https://github.com/etzinis/sudo_rm_rf#pre-trained-models-and-easy-to-use-recipes).
 
-El algoritmo propuesto está basado en la arquitectura Sudo RM-Rf para la separación de fuentes, pero está aplicado para que pueda ejecutarse en tiempo real a través de la GPU de los porátiles Apple Silicon con procesador M1.
+El algoritmo propuesto está basado en la arquitectura Sudo RM-Rf para la separación de fuentes, pero está aplicado para que pueda ejecutarse en tiempo real a través de la GPU de los portáiles Apple Silicon con procesador M1.
 
 ## Proceso de instalación 
 Primero, instalar Python 3.7 (recomendado con Anaconda).
 
 
 ### Instalar Pytorch 
-A través de la pàgina web oficial de [Pytorch](https://pytorch.org/), descargar la librería siguiendo los pasos que os indican a través del sistema operativo que vuestro Pc o portàtil disponga en lenguaje Python. 
+A través de la pagina web oficial de [Pytorch](https://pytorch.org/), descargar la librería siguiendo los pasos que os indican a través del sistema operativo que vuestro Pc o portátil disponga en lenguaje Python. 
 
 
 ### Instalar el repositorio
