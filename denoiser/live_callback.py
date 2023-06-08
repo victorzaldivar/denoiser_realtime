@@ -48,10 +48,6 @@ def get_parser():
 
 # Define the audio processing function
 def process_audio(indata, outdata, frames, time, status):
-    #print(frames)
-    print(frames)
-    print(time)
-    print(status)
     # Perform some audio processing
     # Here, we'll simply invert the audio signal
     mixture = torch.from_numpy(indata[:,0]).squeeze()
