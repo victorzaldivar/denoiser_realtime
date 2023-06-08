@@ -143,11 +143,12 @@ def main():
             # idea 2: intentar-ho dins callback amb els mètodes de la llibreria a veure què
             frame, overflow = stream_in.read(length)
             frame = torch.from_numpy(frame).mean(dim=1).to(args.device)
-            frame = torch.stack(torch.split(frame, len(frame) // 4))
             if args.noise: 
                 frame = torch.randn_like(frame)
             if not args.bypass:
-                tic = time.time()
+                print('THIS IS IN BYPASS')
+                frame = torch.stack(torch.split(frame, len(frame) // 4))
+                #tic = time.time()
                 ini_nrg = torch.sum(frame ** 2)
                 frame = (frame - torch.mean(frame)) / torch.std(frame) #OPTIONAL NORMALIZATION 
                 with torch.no_grad():
@@ -155,7 +156,7 @@ def main():
                     out = model(frame.unsqueeze(1)).detach().squeeze()
                     out = out.reshape(out.shape[0]*out.shape[1])
                 out /= torch.sqrt(torch.sum(out ** 2) / ini_nrg) #energy constraint
-                tac = time.time()
+                #tac = time.time()
                 #print((length/fs)/1000-((tac - tic)/1000)) #spare time!
             else:
                 out = frame
