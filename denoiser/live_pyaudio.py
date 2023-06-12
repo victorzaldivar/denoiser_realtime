@@ -69,13 +69,13 @@ try:
         # Convert the numpy array to a PyTorch tensor
         audio_tensor = torch.from_numpy(audio)
    
-        # # Make a batch with a few smaller frames
+        # Make a batch with a few smaller frames
         audio_tensor = torch.stack(torch.split(audio_tensor, len(audio_tensor) // 1))
     
         # Reshape the tensor to match the expected input shape of the model 
         audio_tensor = audio_tensor.unsqueeze(1)
         
-        # Preprocess audio frame
+        # Preprocess audio frame (normalization)
         ini_nrg = torch.sum(audio_tensor ** 2)
         audio_tensor = (audio_tensor - torch.mean(audio_tensor)) / torch.std(audio_tensor)
         
@@ -85,11 +85,11 @@ try:
         # Pass the audio tensor through the model
         output = model(audio_tensor)
         
-        # Perform any necessary post-processing on the output
+        # Post-processing on the output
         output /= torch.sqrt(torch.sum(output ** 2) / ini_nrg) #energy constraint
         output=output.squeeze(1)
         
-        # # Make a batch with a few smaller frames
+        # Put small batches back into one frame
         output=output.reshape(output.shape[0]*output.shape[1])
         output=output.unsqueeze(1)
 
