@@ -31,8 +31,8 @@ Seguidamente, para instalar el repositorio, solamente hay que hacer ejecutar des
 git clone https://github.com/victorzaldivar/denoiser_realtime.git
 cd denoiser_realtime
 pip install -r requirements.txt  # Si no tienes cuda
-pip install -r requirements_cuda.txt  #si tienes cuda
-pip install -r reqs.txt
+pip install -r requirements_cuda.txt  # Si tienes cuda
+pip install -r reqs.txt #Para Apple Silicon
 ```
 
 ### Instalación de paquetes y dependencias
@@ -63,7 +63,7 @@ Para Mac OS X, hay que utilizar la interfaz [BlackHole](https://existential.audi
 Hay que intalarse BlackHole, y después en el terminal hay que ejecutar:
 
 ```bash
-python -m denoiser.live_rt
+python -m denoiser.denoiser_live
 ```
 
 Para utilizarlo en tus videollamadas, solamente hay ejecutar el modelo y escoger "BlackHole" como input para disfrutar de la eliminación del ruido. Con el siguiente comando en la terminal se puede obtener una lista de dispositivos disponibles. 
